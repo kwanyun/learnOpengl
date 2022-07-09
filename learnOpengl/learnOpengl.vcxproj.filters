@@ -47,9 +47,23 @@
     <ClInclude Include="src\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Vertex.Shader" />
     <None Include="src\Fragment.Shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\rand.JPG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\NC.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\awesomeface.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

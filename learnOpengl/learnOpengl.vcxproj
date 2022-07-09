@@ -158,10 +158,16 @@
     <ClInclude Include="include\GLFW\glfw3native.h" />
     <ClInclude Include="include\KHR\khrplatform.h" />
     <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Fragment.Shader" />
     <None Include="src\Vertex.Shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\awesomeface.png" />
+    <Image Include="src\NC.jpg" />
+    <Image Include="src\rand.JPG" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
