@@ -1143,6 +1143,9 @@
     <ClInclude Include="src\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\glm\detail\func_common.inl">
@@ -1584,6 +1587,10 @@
     <None Include="include\assimp\config.h.in" />
     <None Include="src\vshader.vs" />
     <None Include="src\fshader.fs" />
+    <None Include="src\fshader1-6.fs" />
+    <None Include="src\fshader1-5.fs" />
+    <None Include="src\vshader1-5.vs" />
+    <None Include="src\vshader1-6.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="include\woodenchest\textures\chest_01_BaseColor.png">
@@ -1631,6 +1638,12 @@
     </Image>
     <Image Include="include\model\greatwhiteshark_teeth.tga" />
     <Image Include="include\model\greatwhiteshark_teeth_n.tga" />
+    <Image Include="src\container.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\chrome.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Text Include="include\glm\CMakeLists.txt" />

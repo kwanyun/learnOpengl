@@ -524,6 +524,7 @@
     <ClInclude Include="include\glm\vector_relational.hpp" />
     <ClInclude Include="include\KHR\khrplatform.h" />
     <ClInclude Include="src\Shader.h" />
+    <ClInclude Include="src\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\assimp\.editorconfig" />
@@ -676,7 +677,11 @@
     <None Include="include\woodenchest\source\chest_01.fbx" />
     <None Include="lib\assimp-vc142-mtd.dll" />
     <None Include="src\fshader.fs" />
+    <None Include="src\fshader1-5.fs" />
+    <None Include="src\fshader1-6.fs" />
     <None Include="src\vshader.vs" />
+    <None Include="src\vshader1-5.vs" />
+    <None Include="src\vshader1-6.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="include\model\greatwhiteshark.jpg" />
@@ -702,6 +707,8 @@
     <Image Include="include\woodenchest\textures\chest_01_Normal.png" />
     <Image Include="include\woodenchest\textures\chest_01_Roughness.png" />
     <Image Include="include\woodenchest\textures\internal_ground_ao_texture.jpeg" />
+    <Image Include="src\chrome.PNG" />
+    <Image Include="src\container.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="include\glm\CMakeLists.txt" />
