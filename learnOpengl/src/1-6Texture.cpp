@@ -5,8 +5,7 @@
 #include "stb_image.h"
 #include "Shader.h"
 #include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
@@ -94,12 +93,12 @@ int main()
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, dataawesome);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
-    
+
 
     stbi_image_free(dataawesome);
 
 
-    Shader kwanShader("../learnOpengl/src/vshader1-7.vs", "../learnOpengl/src/fshader1-7.fs");
+    Shader kwanShader("../learnOpengl/src/vshader1-6.vs", "../learnOpengl/src/fshader1-6.fs");
     kwanShader.setInt("texture1", 0);
     kwanShader.setInt("texture2", 1);
 
@@ -143,13 +142,6 @@ int main()
         float timeValue = glfwGetTime();
         float sinTime = (sin(timeValue) / 2.0f);
         kwanShader.setFloat4("ourColor", glm::fvec4(0.5f, 0.5f, 0.5f, 1.0f));
-
-        glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
-        transform = glm::translate(transform, glm::vec3(sinTime, -sinTime, 0.0f));
-        transform = glm::rotate(transform, timeValue, glm::vec3(0.0f, 0.0f, 1.0f));
-
-        unsigned int transformLoc = glGetUniformLocation(kwanShader.programID, "transform");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
         kwanShader.setInt("texture1", 0);
         kwanShader.setInt("texture2", 1); // or with shader class
         kwanShader.setFloat("mixture", sinTime);
@@ -162,7 +154,7 @@ int main()
         glClearColor(0.2f, 0.3f, 0.4f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        
+
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 

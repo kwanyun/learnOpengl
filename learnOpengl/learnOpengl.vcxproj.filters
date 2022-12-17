@@ -1591,6 +1591,8 @@
     <None Include="src\fshader1-5.fs" />
     <None Include="src\vshader1-5.vs" />
     <None Include="src\vshader1-6.vs" />
+    <None Include="src\fshader1-7.fs" />
+    <None Include="src\vshader1-7.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="include\woodenchest\textures\chest_01_BaseColor.png">
