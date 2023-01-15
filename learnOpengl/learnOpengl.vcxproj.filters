@@ -1593,6 +1593,8 @@
     <None Include="src\vshader1-6.vs" />
     <None Include="src\fshader1-7.fs" />
     <None Include="src\vshader1-7.vs" />
+    <None Include="src\vshader1-8.vs" />
+    <None Include="src\fshader1-8.fs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="include\woodenchest\textures\chest_01_BaseColor.png">
@@ -1644,6 +1646,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="src\chrome.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\pic.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

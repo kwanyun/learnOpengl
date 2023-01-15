@@ -680,10 +680,12 @@
     <None Include="src\fshader1-5.fs" />
     <None Include="src\fshader1-6.fs" />
     <None Include="src\fshader1-7.fs" />
+    <None Include="src\fshader1-8.fs" />
     <None Include="src\vshader.vs" />
     <None Include="src\vshader1-5.vs" />
     <None Include="src\vshader1-6.vs" />
     <None Include="src\vshader1-7.vs" />
+    <None Include="src\vshader1-8.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="include\model\greatwhiteshark.jpg" />
@@ -711,6 +713,7 @@
     <Image Include="include\woodenchest\textures\internal_ground_ao_texture.jpeg" />
     <Image Include="src\chrome.PNG" />
     <Image Include="src\container.jpg" />
+    <Image Include="src\pic.png" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="include\glm\CMakeLists.txt" />
